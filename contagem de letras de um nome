@@ -1,0 +1,13 @@
+#contagem de letras de um nome
+nome = input("Digite o seu nome: ")
+if nome.replace(" ", "").isalpha():
+    letras = len(nome.replace(" ", ""))
+    print(f"Seu nome tem {letras} letras")
+    if letras <= 4:
+        print("Seu nome é curto")
+    elif letras <= 6:
+        print("Seu nome é normal")
+    else:
+        print("Seu nome é muito grande")
+else:
+    print("Erro. digite apenas letras")
